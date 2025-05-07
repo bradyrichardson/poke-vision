@@ -4,10 +4,31 @@ import cv2
 import pyautogui as auto
 
 cap = cv2.VideoCapture(0)
+
+# Add check for camera initializat
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# ion
+if not cap.isOpened():
+    print("Error: Could not open camera")
+    exit()
+
 detector = HandDetector(detectionCon=0.8, maxHands=2)
 while True:
     # Get image frame
     success, img = cap.read()
+    if not success:
+        print("Error: Failed to capture frame")
+        continue
+    
     hands = False
     if success:
         hands, img = detector.findHands(img, draw=True, flipType=True)
