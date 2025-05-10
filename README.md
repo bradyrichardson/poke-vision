@@ -26,6 +26,6 @@ Playing Pokemon with Hand Gestures
 
 **Note:** Make sure that your IDE or text editor has permission to access your computer's camera, and that it has access to enter key commands on your system! Also, the pyboy window must be in focus for the gesture commands to work.
 
-![Screenshot 2024-04-18 at 16.52.56.png](Screenshot%202024-04-18%20at%2016.52.56.png)
+![Poke-vision-demo](Poke-vision-demo.gif)
 
 **Credit to the creators of pyboy, cvzone, open-cv, and pyautogui for making this fun little project possible**
